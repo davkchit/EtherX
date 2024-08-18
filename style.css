@@ -1,0 +1,188 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: url(imgs/background_mobile.png) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    height: 50px;
+    background: linear-gradient(#333F65, rgba(110, 96, 123, 0.37));
+    font-weight: 200;
+}
+
+.search-form {
+    display: none;
+}
+
+.search-form__search {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__img {
+    display: none;
+}
+
+.nav {
+    display: none;
+}
+
+.nav__connect-wallet {
+    background: linear-gradient(90deg, #6A02BC, #BB456F);
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 146px;
+    height: 36px;
+    border-radius: 10px;
+}
+
+.main {
+    color: white;
+    margin: 34px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main__heading {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.main__paragrahp {
+    font-size: 20px;
+}
+
+.main__learn-more {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__info {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.explore-button {
+    color: white;
+    width: 104px;
+    height: 32px;
+    background-color: #6A02BC;
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+}
+
+.create-button {
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+    width: 104px;
+    height: 32px;
+}
+
+.main__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 253px;
+    
+}
+
+@media (min-width:500px) {
+    body {
+        background: url(imgs/background_500.png) no-repeat fixed;
+        background-size: cover;
+    }
+
+    .main {
+        text-align: center;
+        align-items: center;
+    }
+
+    .main__heading {
+        font-size: 60px;
+    }
+
+    .main__paragrahp {
+        font-size: 40px;
+    }
+
+    .main__info {
+        font-size: 18px;
+    }
+
+    .main__buttons {
+        width: 353px;
+    }
+
+    .main__buttons * {
+        width: 154px;
+        height: 47px;
+        font-size: 23px;
+    }
+
+    .logo__img {
+        display:inline;
+    }
+
+    .logo {
+        width: 110px;
+    }
+}
+
+@media (min-width:900px) {
+    body {
+        background: url(imgs/background_desktop.png) no-repeat fixed;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1080px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 550px;
+    }
+
+    .burger {
+        display: none;
+    }
+}
+
+@media (min-width: 365px) {
+    .search-form {
+        width: 184px;
+        height: 29px;
+        background-color: rgba(255, 255, 255, 0.30);
+        border-radius: 10px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
